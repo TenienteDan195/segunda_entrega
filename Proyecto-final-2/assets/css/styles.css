@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0%;
+}
+
+:root{
+    --blanco: #ffffff;
+    --vino: #420516;
+    --Azul: #0A1D37;
+    --Naranja: #FB9300;
+    --obscuro: #212121; 
+}
+
+
+/*Barra de navegacion inicio*/
+
+.navbar{
+    background-color: #420516;
+    width: 100%;
+}
+
+.navbar .logo{
+    display:inline-block;
+    padding: 30px;
+}
+
+.navbar .navbar-menu{
+    float: right;
+}
+
+.navbar .logo p{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight:900;
+}
+
+.navbar .navbar-menu ul{
+    display: flex;
+    padding: 30px;
+}
+
+.navbar .navbar-menu ul li{
+    display: inline-block;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+
+.navbar .navbar-menu ul li a:hover{
+    background-color: #FB9300;
+    border-radius: 3px;
+}
+
+.navbar .navbar-menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+/* Arroba media de barra de navegacion */
+
+@media screen and (min-width:750px){
+    .menu-responsive{
+        display:none;
+    }
+}
+
+@media screen and (max-width:750px){
+    .navbar{
+        display: none;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+        padding-left: 25px;
+    }
+
+    .logo p{
+        color:#ffffff ;
+        font-size: x-large;
+        font-family: sans-serif;
+        font-weight: 600;
+        text-align: center;
+
+    }
+
+    .menu-responsive{
+        background-color: #420516;
+    }
+
+    .navbar-menu ul li:hover{
+        background-color: #FB9300;
+        border-radius: 3px;
+    }
+
+    .navbar-responsive .navbar-menu{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .navbar-responsive .navbar-menu ul li{
+        list-style: none;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-responsive .navbar-menu ul li a{
+        color: #ffffff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .navbar-responsive .navbar-menu ul{
+
+}
+}
+/*Termina barra de navegacion*/
+
+.conteiner{
+    
+}
+
+
+
